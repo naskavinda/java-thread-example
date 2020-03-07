@@ -5,7 +5,7 @@ import java.io.*;
 
 @SuppressWarnings("Duplicates")
 public class KnockKnockServer {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         int portNumber = 8080;
         while (true) {
@@ -15,7 +15,7 @@ public class KnockKnockServer {
                     PrintWriter out =
                             new PrintWriter(clientSocket.getOutputStream(), true);
                     BufferedReader in = new BufferedReader(
-                            new InputStreamReader(clientSocket.getInputStream()));
+                            new InputStreamReader(clientSocket.getInputStream()))
             ) {
 
                 String inputLine;

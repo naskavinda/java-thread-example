@@ -40,7 +40,7 @@ public class RequestProcessor {
                 PrintWriter out =
                         new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(
-                        new InputStreamReader(socket.getInputStream()));
+                        new InputStreamReader(socket.getInputStream()))
         ) {
 
             String inputLine;

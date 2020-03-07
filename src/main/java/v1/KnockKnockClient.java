@@ -5,7 +5,7 @@ import java.net.*;
 
 @SuppressWarnings("Duplicates")
 public class KnockKnockClient {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         String hostName = "localhost";
         int portNumber = 8080;
@@ -14,7 +14,7 @@ public class KnockKnockClient {
                 Socket kkSocket = new Socket(hostName, portNumber);
                 PrintWriter out = new PrintWriter(kkSocket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(
-                        new InputStreamReader(kkSocket.getInputStream()));
+                        new InputStreamReader(kkSocket.getInputStream()))
         ) {
 
             String fromServer;
