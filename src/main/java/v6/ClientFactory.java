@@ -8,11 +8,13 @@ public class ClientFactory {
     public static void main(String[] args) throws InterruptedException {
         Random random = new Random();
         for (int i = 0; i < 10; i++) {
+            int productId = random.nextInt(4) + 1;
+            int qty = random.nextInt(10) + 1;
             Thread client = new Thread(
-                    new KnockKnockClient(
+                    new Client(
                             "localhost",
                             8080,
-                            String.format("%s|%s", random.nextInt(4) + 1, random.nextInt(10) + 1)
+                            String.format("%s|%s", productId, qty)
                     )
             );
             client.start();

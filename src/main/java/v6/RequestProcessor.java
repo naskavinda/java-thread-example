@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+@SuppressWarnings("Duplicates")
 public class RequestProcessor {
 
     private final Thread t;

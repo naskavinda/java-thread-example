@@ -18,7 +18,7 @@ public class KnockKnockClient {
         ) {
 
             String fromServer;
-            out.println("from the client");
+            out.println("from the Client");
             if ((fromServer = in.readLine()) != null) {
                 System.out.println(fromServer);
             }

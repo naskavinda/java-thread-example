@@ -6,7 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 @SuppressWarnings("Duplicates")
-public class KnockKnockServer {
+public class Server {
     public static void main(String[] args) throws IOException {
 
         int portNumber = 8080;

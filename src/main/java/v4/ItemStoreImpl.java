@@ -5,6 +5,7 @@ import util.LogPrinter;
 
 import java.util.LinkedList;
 
+@SuppressWarnings("Duplicates")
 public class ItemStoreImpl<T> implements ItemStore<T> {
 
     private LinkedList<T> items = new LinkedList<>();

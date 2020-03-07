@@ -1,5 +1,7 @@
 package v6;
 
+import util.LogPrinter;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,13 +9,13 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 @SuppressWarnings("Duplicates")
-public class KnockKnockClient implements Runnable {
+public class Client implements Runnable {
 
     private final String hostName;
     private final int portNumber;
     private final String message;
 
-    public KnockKnockClient(String hostName, int portNumber, String message) {
+    public Client(String hostName, int portNumber, String message) {
         this.hostName = hostName;
         this.portNumber = portNumber;
         this.message = message;
@@ -35,7 +37,7 @@ public class KnockKnockClient implements Runnable {
                 System.out.println(fromServer);
             }
         } catch (IOException e) {
-
+            LogPrinter.logMsg("Port is not available.");
         }
     }
 }

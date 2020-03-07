@@ -6,7 +6,6 @@ import org.apache.http.util.EntityUtils;
 import util.LogPrinter;
 
 import java.io.IOException;
-import java.util.Optional;
 
 public class ApiRequestHandler {
 

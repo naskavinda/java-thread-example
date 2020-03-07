@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+@SuppressWarnings("Duplicates")
 public class WorkerThread implements Runnable{
 
     private final Socket clientSocket;

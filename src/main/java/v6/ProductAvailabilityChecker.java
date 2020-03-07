@@ -1,12 +1,6 @@
 package v6;
 
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
 import util.LogPrinter;
-
-import java.util.Arrays;
-import java.util.Optional;
-import java.util.logging.Logger;
 
 public class ProductAvailabilityChecker {
 

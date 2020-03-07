@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-thread-example" />
+        <module name="java-client-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java-thread-example" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
