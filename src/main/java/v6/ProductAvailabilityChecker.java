@@ -2,6 +2,7 @@ package v6;
 
 import util.LogPrinter;
 
+@SuppressWarnings("Duplicates")
 public class ProductAvailabilityChecker {
 
     private final ApiRequestHandler apiRequestHandler;
